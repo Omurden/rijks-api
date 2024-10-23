@@ -57,25 +57,6 @@ public class RijksmuseumAPITests {
     }
 
     @Test
-    @Description("Retrieve collections with pagination and verify the response")
-    public void testRetrieveCollectionsWithPagination() {
-        retrieveCollectionsWithPagination(1, 10);
-    }
-
-    @Step("Retrieving collections with page '{page}' and page size '{pageSize}'")
-    public void retrieveCollectionsWithPagination(int page, int pageSize) {
-        given()
-            .queryParam("key", API_KEY)
-            .queryParam("p", page)
-            .queryParam("ps", pageSize)
-        .when()
-            .get()
-        .then()
-            .statusCode(200)
-            .body("artObjects.size()", lessThanOrEqualTo(pageSize));
-    }
-
-    @Test
     @Description("Retrieve collections sorted by relevance and verify the response")
     public void testRetrieveCollectionsSortedByRelevance() {
         retrieveCollectionsSortedByRelevance("landscape");

@@ -1,0 +1,57 @@
+{
+  "uid" : "766a4dd9122237f",
+  "name" : "testRetrieveCollections()",
+  "fullName" : "com.rijks.RijksmuseumAPITests.testRetrieveCollections",
+  "historyId" : "251af573a984d3a659b80099f95bb777",
+  "time" : {
+    "start" : 1729693403905,
+    "stop" : 1729693410623,
+    "duration" : 6718
+  },
+  "description" : "Retrieve the list of collections and verify the response",
+  "descriptionHtml" : "<p>Retrieve the list of collections and verify the response</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "Omurdens-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "80278@Omurdens-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.rijks.RijksmuseumAPITests"
+  }, {
+    "name" : "testClass",
+    "value" : "com.rijks.RijksmuseumAPITests"
+  }, {
+    "name" : "testMethod",
+    "value" : "testRetrieveCollections"
+  }, {
+    "name" : "suite",
+    "value" : "com.rijks.RijksmuseumAPITests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "766a4dd9122237f.json",
+  "parameterValues" : [ ]
+}

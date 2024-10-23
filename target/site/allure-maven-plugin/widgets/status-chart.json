@@ -1,0 +1,41 @@
+[ {
+  "uid" : "41fe69b4157430b7",
+  "name" : "testRetrieveCollectionsInDifferentLanguage()",
+  "time" : {
+    "start" : 1729693423137,
+    "stop" : 1729693427949,
+    "duration" : 4812
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb6656c5f0f4a0ff",
+  "name" : "testRetrieveCollectionsSortedByRelevance()",
+  "time" : {
+    "start" : 1729693420539,
+    "stop" : 1729693423135,
+    "duration" : 2596
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "766a4dd9122237f",
+  "name" : "testRetrieveCollections()",
+  "time" : {
+    "start" : 1729693403905,
+    "stop" : 1729693410623,
+    "duration" : 6718
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef7f439a61778a14",
+  "name" : "testRetrieveObjectDetails()",
+  "time" : {
+    "start" : 1729693410646,
+    "stop" : 1729693420535,
+    "duration" : 9889
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

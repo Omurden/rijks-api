@@ -1,0 +1,5 @@
+"Status","Name","Duration in ms","Description"
+"passed","com.rijks.RijksmuseumAPITests.testRetrieveCollectionsInDifferentLanguage","4812","Retrieve collections in a different language (Dutch) and verify the response"
+"passed","com.rijks.RijksmuseumAPITests.testRetrieveCollectionsSortedByRelevance","2596","Retrieve collections sorted by relevance and verify the response"
+"passed","com.rijks.RijksmuseumAPITests.testRetrieveCollections","6718","Retrieve the list of collections and verify the response"
+"passed","com.rijks.RijksmuseumAPITests.testRetrieveObjectDetails","9889","Test to retrieve details of a specific art object"
