@@ -50,7 +50,7 @@ jobs:
         name: allure-report
         path: target/allure-report
 
-# Merge rules after passing all tests
+# Merge rules after passing all tests**
 jobs:
   deploy:
     needs: build
