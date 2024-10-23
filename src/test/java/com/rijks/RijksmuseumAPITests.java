@@ -1,7 +1,6 @@
 package com.rijks;
 
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.Matchers.*;
@@ -37,7 +36,6 @@ public class RijksmuseumAPITests {
             .statusCode(200)
             .body("artObjects", notNullValue())
             .body("artObjects.size()", greaterThan(0));
-            //dummy
     }
 
     @Test
@@ -56,5 +54,44 @@ public class RijksmuseumAPITests {
             .statusCode(200)
             .body("artObject.title", notNullValue())
             .body("artObject.objectNumber", equalTo(objectNumber));
+    }
+
+    @Test
+    @Description("Retrieve collections sorted by relevance and verify the response")
+    public void testRetrieveCollectionsSortedByRelevance() {
+        retrieveCollectionsSortedByRelevance("landscape");
+    }
+
+    @Step("Retrieving collections for query '{query}' sorted by relevance")
+    public void retrieveCollectionsSortedByRelevance(String query) {
+        given()
+            .queryParam("key", API_KEY)
+            .queryParam("q", query)
+            .queryParam("s", "relevance")
+        .when()
+            .get()
+        .then()
+            .statusCode(200)
+            .body("artObjects", notNullValue());
+    }
+
+    @Test
+    @Description("Retrieve collections in a different language (Dutch) and verify the response")
+    public void testRetrieveCollectionsInDifferentLanguage() {
+        retrieveCollectionsInDifferentLanguage("nl", "Rembrandt");
+    }
+
+    @Step("Retrieving collections with language '{language}' and query '{query}'")
+    public void retrieveCollectionsInDifferentLanguage(String language, String query) {
+        given()
+            .queryParam("key", API_KEY)
+            .queryParam("lang", language)
+            .queryParam("q", query)
+        .when()
+            .get()
+        .then()
+            .statusCode(200)
+            .body("artObjects", notNullValue())
+            .body("artObjects.size()", greaterThan(0));
     }
 }

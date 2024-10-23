@@ -4,33 +4,57 @@
   "children" : [ {
     "name" : "Omurdens-MacBook-Pro.local",
     "children" : [ {
-      "name" : "70164@Omurdens-MacBook-Pro.local.main(1)",
+      "name" : "80278@Omurdens-MacBook-Pro.local.main(1)",
       "children" : [ {
-        "name" : "testRetrieveObjectDetails()",
-        "uid" : "33580edef3899445",
-        "parentUid" : "d3d0bc4d67a81a92ef14f05e36f753cf",
+        "name" : "testRetrieveCollectionsInDifferentLanguage()",
+        "uid" : "41fe69b4157430b7",
+        "parentUid" : "3077d69bce37b1455f2c95272d4d9a93",
         "status" : "passed",
         "time" : {
-          "start" : 1729682346996,
-          "stop" : 1729682347819,
-          "duration" : 823
+          "start" : 1729693423137,
+          "stop" : 1729693427949,
+          "duration" : 4812
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testRetrieveCollectionsSortedByRelevance()",
+        "uid" : "bb6656c5f0f4a0ff",
+        "parentUid" : "3077d69bce37b1455f2c95272d4d9a93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729693420539,
+          "stop" : 1729693423135,
+          "duration" : 2596
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "testRetrieveCollections()",
-        "uid" : "d5d3f4a7972d1c48",
-        "parentUid" : "d3d0bc4d67a81a92ef14f05e36f753cf",
+        "uid" : "766a4dd9122237f",
+        "parentUid" : "3077d69bce37b1455f2c95272d4d9a93",
         "status" : "passed",
         "time" : {
-          "start" : 1729682345342,
-          "stop" : 1729682346955,
-          "duration" : 1613
+          "start" : 1729693403905,
+          "stop" : 1729693410623,
+          "duration" : 6718
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testRetrieveObjectDetails()",
+        "uid" : "ef7f439a61778a14",
+        "parentUid" : "3077d69bce37b1455f2c95272d4d9a93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729693410646,
+          "stop" : 1729693420535,
+          "duration" : 9889
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "d3d0bc4d67a81a92ef14f05e36f753cf"
+      "uid" : "3077d69bce37b1455f2c95272d4d9a93"
     } ],
     "uid" : "1e4fe81495815bb53c75b11ce0ba0b83"
   } ]

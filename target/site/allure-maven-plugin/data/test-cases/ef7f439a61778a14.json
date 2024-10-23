@@ -1,12 +1,12 @@
 {
-  "uid" : "33580edef3899445",
+  "uid" : "ef7f439a61778a14",
   "name" : "testRetrieveObjectDetails()",
   "fullName" : "com.rijks.RijksmuseumAPITests.testRetrieveObjectDetails",
   "historyId" : "9dfbf5c5818cc048845b47c117490a8b",
   "time" : {
-    "start" : 1729682346996,
-    "stop" : 1729682347819,
-    "duration" : 823
+    "start" : 1729693410646,
+    "stop" : 1729693420535,
+    "duration" : 9889
   },
   "description" : "Test to retrieve details of a specific art object",
   "descriptionHtml" : "<p>Test to retrieve details of a specific art object</p>\n",
@@ -19,7 +19,7 @@
     "value" : "Omurdens-MacBook-Pro.local"
   }, {
     "name" : "thread",
-    "value" : "70164@Omurdens-MacBook-Pro.local.main(1)"
+    "value" : "80278@Omurdens-MacBook-Pro.local.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -52,6 +52,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "33580edef3899445.json",
+  "source" : "ef7f439a61778a14.json",
   "parameterValues" : [ ]
 }
