@@ -56,5 +56,5 @@ public class RijksmuseumAPITests {
             .body("artObject.title", notNullValue())
             .body("artObject.objectNumber", equalTo(objectNumber));
     }
-    //dummy text2456
+    //dummy text24567
 }
