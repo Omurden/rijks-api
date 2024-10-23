@@ -1,9 +1,9 @@
-name: Rijks Museum API Tests
+name: RijksMusuem API CI
 
 on:
   push:
     branches:
-      - master  
+      - master
   pull_request:
     branches:
       - master
@@ -16,6 +16,9 @@ jobs:
     # Step 1: Checkout the repository
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        ref: ${{ github.head_ref }}
+        fetch-depth: 0
 
     # Step 2: Set up JDK 11
     - name: Set up JDK 11
@@ -29,7 +32,7 @@ jobs:
       uses: actions/cache@v4
       with:
         path: ~/.m2/repository
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}-${{ github.run_id }}
         restore-keys: |
           ${{ runner.os }}-maven
 
