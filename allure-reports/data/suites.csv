@@ -1,6 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Test to verify the API returns a 200 status code","1560","testStatusCode()","","Wed Oct 23 10:41:02 CEST 2024","passed","Wed Oct 23 10:41:03 CEST 2024","","com.example.RijksAPITests","com.example.RijksAPITests","testStatusCode"
-"Test to retrieve details of a specific art object","821","testRetrieveObjectDetails()","","Wed Oct 23 11:00:27 CEST 2024","passed","Wed Oct 23 11:00:28 CEST 2024","","com.example.RijksmuseumAPITests","com.example.RijksmuseumAPITests","testRetrieveObjectDetails"
-"Test to verify the API returns a non-empty response","1305","testNonEmptyResponse()","","Wed Oct 23 10:41:03 CEST 2024","passed","Wed Oct 23 10:41:05 CEST 2024","","com.example.RijksAPITests","com.example.RijksAPITests","testNonEmptyResponse"
-"","10","testApp()","","Wed Oct 23 10:29:01 CEST 2024","passed","Wed Oct 23 10:29:01 CEST 2024","","com.example.AppTest","com.example.AppTest","testApp"
-"Test to retrieve the list of collections and verify the response","1137","testRetrieveCollections()","","Wed Oct 23 11:00:26 CEST 2024","passed","Wed Oct 23 11:00:27 CEST 2024","","com.example.RijksmuseumAPITests","com.example.RijksmuseumAPITests","testRetrieveCollections"
