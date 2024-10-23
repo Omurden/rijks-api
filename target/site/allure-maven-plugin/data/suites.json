@@ -5,49 +5,37 @@
     "name" : "com.rijks.RijksmuseumAPITests",
     "children" : [ {
       "name" : "testRetrieveCollections()",
-      "uid" : "766a4dd9122237f",
+      "uid" : "3e70872a7331086b",
       "parentUid" : "26a75402d9a795e94a468b3b3e0b54cb",
       "status" : "passed",
       "time" : {
-        "start" : 1729693403905,
-        "stop" : 1729693410623,
-        "duration" : 6718
+        "start" : 1729694826112,
+        "stop" : 1729694828117,
+        "duration" : 2005
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRetrieveObjectDetailsInDutch()",
+      "uid" : "13206cf6a11a8df7",
+      "parentUid" : "26a75402d9a795e94a468b3b3e0b54cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1729694828143,
+        "stop" : 1729694829093,
+        "duration" : 950
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "testRetrieveObjectDetails()",
-      "uid" : "ef7f439a61778a14",
+      "uid" : "47741f5206e5cb03",
       "parentUid" : "26a75402d9a795e94a468b3b3e0b54cb",
       "status" : "passed",
       "time" : {
-        "start" : 1729693410646,
-        "stop" : 1729693420535,
-        "duration" : 9889
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "testRetrieveCollectionsSortedByRelevance()",
-      "uid" : "bb6656c5f0f4a0ff",
-      "parentUid" : "26a75402d9a795e94a468b3b3e0b54cb",
-      "status" : "passed",
-      "time" : {
-        "start" : 1729693420539,
-        "stop" : 1729693423135,
-        "duration" : 2596
-      },
-      "flaky" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "testRetrieveCollectionsInDifferentLanguage()",
-      "uid" : "41fe69b4157430b7",
-      "parentUid" : "26a75402d9a795e94a468b3b3e0b54cb",
-      "status" : "passed",
-      "time" : {
-        "start" : 1729693423137,
-        "stop" : 1729693427949,
-        "duration" : 4812
+        "start" : 1729694829095,
+        "stop" : 1729694829836,
+        "duration" : 741
       },
       "flaky" : false,
       "parameters" : [ ]

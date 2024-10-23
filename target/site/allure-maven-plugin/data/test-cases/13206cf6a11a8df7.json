@@ -1,15 +1,15 @@
 {
-  "uid" : "766a4dd9122237f",
-  "name" : "testRetrieveCollections()",
-  "fullName" : "com.rijks.RijksmuseumAPITests.testRetrieveCollections",
-  "historyId" : "251af573a984d3a659b80099f95bb777",
+  "uid" : "13206cf6a11a8df7",
+  "name" : "testRetrieveObjectDetailsInDutch()",
+  "fullName" : "com.rijks.RijksmuseumAPITests.testRetrieveObjectDetailsInDutch",
+  "historyId" : "2e455081227795ea0f79926e0daf444e",
   "time" : {
-    "start" : 1729693403905,
-    "stop" : 1729693410623,
-    "duration" : 6718
+    "start" : 1729694828143,
+    "stop" : 1729694829093,
+    "duration" : 950
   },
-  "description" : "Retrieve the list of collections and verify the response",
-  "descriptionHtml" : "<p>Retrieve the list of collections and verify the response</p>\n",
+  "description" : "Test to retrieve details of a specific art object in Dutch",
+  "descriptionHtml" : "<p>Test to retrieve details of a specific art object in Dutch</p>\n",
   "status" : "passed",
   "flaky" : false,
   "beforeStages" : [ ],
@@ -19,7 +19,7 @@
     "value" : "Omurdens-MacBook-Pro.local"
   }, {
     "name" : "thread",
-    "value" : "80278@Omurdens-MacBook-Pro.local.main(1)"
+    "value" : "81427@Omurdens-MacBook-Pro.local.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -34,7 +34,7 @@
     "value" : "com.rijks.RijksmuseumAPITests"
   }, {
     "name" : "testMethod",
-    "value" : "testRetrieveCollections"
+    "value" : "testRetrieveObjectDetailsInDutch"
   }, {
     "name" : "suite",
     "value" : "com.rijks.RijksmuseumAPITests"
@@ -52,6 +52,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "766a4dd9122237f.json",
+  "source" : "13206cf6a11a8df7.json",
   "parameterValues" : [ ]
 }
