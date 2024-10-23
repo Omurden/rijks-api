@@ -1,4 +1,4 @@
-name: RijksMusuem API CI
+name: Riksmuseum API Tests CI
 
 on:
   push:
@@ -16,9 +16,6 @@ jobs:
     # Step 1: Checkout the repository
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        ref: ${{ github.head_ref }}
-        fetch-depth: 0
 
     # Step 2: Set up JDK 11
     - name: Set up JDK 11
@@ -32,18 +29,18 @@ jobs:
       uses: actions/cache@v4
       with:
         path: ~/.m2/repository
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}-${{ github.run_id }}
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven
 
     # Step 4: Install dependencies and run tests
     - name: Build with Maven and Run Tests
-      run: mvn clean test
+      run: mvn clean test -Dsource=1.8 -Dtarget=1.8
 
     # Step 5: Generate Allure Results
     - name: Generate Allure Report
       run: |
-        mvn allure:report
+        mvn allure:report -Dsource=1.8 -Dtarget=1.8
         allure generate target/allure-results -o target/allure-report --clean
 
     # Step 6: Upload Allure Report as an Artifact
