@@ -1,3 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"passed","com.rijks.RijksmuseumAPITests.testRetrieveObjectDetails","823","Test to retrieve details of a specific art object"
-"passed","com.rijks.RijksmuseumAPITests.testRetrieveCollections","1613","Retrieve the list of collections and verify the response"
