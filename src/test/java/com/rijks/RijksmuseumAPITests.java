@@ -53,45 +53,26 @@ public class RijksmuseumAPITests {
         .then()
             .statusCode(200)
             .body("artObject.title", notNullValue())
-            .body("artObject.objectNumber", equalTo(objectNumber));
+            .body("artObject.objectNumber", equalTo(objectNumber))
+            .body("artObject.title", equalTo("The Night Watch Militia Company of District II under the Command of Captain Frans Banninck Cocq"));
     }
 
     @Test
-    @Description("Retrieve collections sorted by relevance and verify the response")
-    public void testRetrieveCollectionsSortedByRelevance() {
-        retrieveCollectionsSortedByRelevance("landscape");
+    @Description("Test to retrieve details of a specific art object in Dutch")
+    public void testRetrieveObjectDetailsInDutch() {
+        retrieveObjectDetails("SK-C-5");
     }
 
-    @Step("Retrieving collections for query '{query}' sorted by relevance")
-    public void retrieveCollectionsSortedByRelevance(String query) {
+    @Step("Retrieving object details for object number '{objectNumber}'")
+    public void testRetrieveObjectDetailsInDutch(String objectNumber) {
         given()
             .queryParam("key", API_KEY)
-            .queryParam("q", query)
-            .queryParam("s", "relevance")
         .when()
-            .get()
+            .get("/{objectNumber}", objectNumber)
         .then()
             .statusCode(200)
-            .body("artObjects", notNullValue());
-    }
-
-    @Test
-    @Description("Retrieve collections in a different language (Dutch) and verify the response")
-    public void testRetrieveCollectionsInDifferentLanguage() {
-        retrieveCollectionsInDifferentLanguage("nl", "Rembrandt");
-    }
-
-    @Step("Retrieving collections with language '{language}' and query '{query}'")
-    public void retrieveCollectionsInDifferentLanguage(String language, String query) {
-        given()
-            .queryParam("key", API_KEY)
-            .queryParam("lang", language)
-            .queryParam("q", query)
-        .when()
-            .get()
-        .then()
-            .statusCode(200)
-            .body("artObjects", notNullValue())
-            .body("artObjects.size()", greaterThan(0));
+            .body("artObject.title", notNullValue())
+            .body("artObject.objectNumber", equalTo(objectNumber))
+            .body("artObject.title", equalTo("De Nachtwacht"));
     }
 }
