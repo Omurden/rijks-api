@@ -17,7 +17,7 @@ Follow the steps below to set up the project:
 
 1. **Clone the Repository**
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/Omurden/rijks-api.git
    cd rijksmuseum-api-tests
    ```
 
