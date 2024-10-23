@@ -1,16 +1,15 @@
-name: Rijks API Testing CI 
+name: Rijksmuseum API Tests CI
 
 on:
   push:
     branches:
-      - main
+      - master  
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -50,3 +49,13 @@ jobs:
       with:
         name: allure-report
         path: target/allure-report
+
+# Merge rules after passing all tests
+jobs:
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Ensure all checks have passed before merge
+      run: echo "All tests have passed. Proceed to merge if needed."
