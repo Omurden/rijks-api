@@ -1,0 +1,33 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.rijks.RijksmuseumAPITests",
+    "children" : [ {
+      "name" : "testRetrieveCollections",
+      "uid" : "7b3218c64a2d16be",
+      "parentUid" : "7f78218cbc268838a2bfe944bba7303a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1729681388749,
+        "stop" : 1729681389822,
+        "duration" : 1073
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRetrieveObjectDetails",
+      "uid" : "2bd3f6ee6fef5ff6",
+      "parentUid" : "7f78218cbc268838a2bfe944bba7303a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1729681389853,
+        "stop" : 1729681391167,
+        "duration" : 1314
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.rijks.RijksmuseumAPITests"
+  } ]
+}

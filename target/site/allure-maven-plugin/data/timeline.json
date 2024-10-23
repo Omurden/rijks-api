@@ -1,0 +1,37 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Omurdens-MacBook-Pro.local",
+    "children" : [ {
+      "name" : "68882@Omurdens-MacBook-Pro.local.main(1)",
+      "children" : [ {
+        "name" : "testRetrieveObjectDetails()",
+        "uid" : "2bd3f6ee6fef5ff6",
+        "parentUid" : "45f42a503057b018c2519f5394da4da1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729681389853,
+          "stop" : 1729681391167,
+          "duration" : 1314
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testRetrieveCollections()",
+        "uid" : "7b3218c64a2d16be",
+        "parentUid" : "45f42a503057b018c2519f5394da4da1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1729681388749,
+          "stop" : 1729681389822,
+          "duration" : 1073
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "45f42a503057b018c2519f5394da4da1"
+    } ],
+    "uid" : "1e4fe81495815bb53c75b11ce0ba0b83"
+  } ]
+}

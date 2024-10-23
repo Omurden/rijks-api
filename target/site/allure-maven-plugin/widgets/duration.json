@@ -1,0 +1,21 @@
+[ {
+  "uid" : "2bd3f6ee6fef5ff6",
+  "name" : "testRetrieveObjectDetails()",
+  "time" : {
+    "start" : 1729681389853,
+    "stop" : 1729681391167,
+    "duration" : 1314
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b3218c64a2d16be",
+  "name" : "testRetrieveCollections()",
+  "time" : {
+    "start" : 1729681388749,
+    "stop" : 1729681389822,
+    "duration" : 1073
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
