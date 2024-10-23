@@ -1,4 +1,4 @@
-name: RijksMuseum API Tests
+name: RijksMuseumAPITests
 
 on:
   push:
