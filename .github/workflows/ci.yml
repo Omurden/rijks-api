@@ -1,4 +1,4 @@
-name: Rijskmuseum API Tests
+name: RijksMuseum API Tests
 
 on:
   push:
@@ -51,10 +51,10 @@ jobs:
         path: target/allure-report
 
 # Merge rules after passing all tests
-deploy:
-  needs: build
-  runs-on: ubuntu-latest
-  if: github.ref == 'refs/heads/main'
-  steps:
-    - name: Ensure all checks have passed before merge
-      run: echo "All tests have passed. Proceed to merge if needed."
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Ensure all checks have passed before merge
+        run: echo "All tests have passed. Proceed to merge if needed."
