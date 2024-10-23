@@ -37,6 +37,7 @@ public class RijksmuseumAPITests {
             .statusCode(200)
             .body("artObjects", notNullValue())
             .body("artObjects.size()", greaterThan(0));
+            //dummy
     }
 
     @Test
