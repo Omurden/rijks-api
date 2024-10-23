@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - master
-
+      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -38,10 +38,16 @@ jobs:
       run: mvn clean test -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8
 
     # Step 5: Generate Allure Results
+    - name: Install Allure CLI
+      run: |
+        wget https://github.com/allure-framework/allure2/releases/download/2.8.1/allure-2.8.1.zip
+        unzip -o allure-2.8.1.zip -d /home/runner/
+        mv /home/runner/allure-2.8.1 /home/runner/.allure
+    
     - name: Generate Allure Report
       run: |
         mvn allure:report -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8
-        allure generate target/allure-results -o target/allure-report --clean
+        /home/runner/.allure/allure generate target/allure-results -o target/allure-report --clean
 
     # Step 6: Upload Allure Report as an Artifact
     - name: Upload Allure Report
